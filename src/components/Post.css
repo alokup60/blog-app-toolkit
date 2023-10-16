@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  .new-form {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-form {
+    width: 90%;
+  }
+  .new-form form {
+    width: 100%;
+    /* padding: 10px 0; */
+    /* background-color: green; */
+  }
+}

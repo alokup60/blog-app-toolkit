@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import "./Post.css";
 
 const Post = () => {
   const [data, setData] = useState({
@@ -70,8 +71,8 @@ const Post = () => {
   };
 
   return (
-    <div>
-      <div className="w-6/12 flex flex-col  justify-center gap-4 mx-auto mt-[2rem]">
+    <div className="w-full">
+      <div className="w-8/12 flex flex-col  justify-center gap-4 mx-auto mt-[2rem] new-form">
         <form
           onSubmit={submitHandler}
           className="flex flex-col gap-2 w-8/12 justify-center mx-auto bg-gray-200 px-4 py-[2rem] rounded-md"

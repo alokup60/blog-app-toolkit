@@ -11,12 +11,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex w-full bg-violet-500 relative">
-      <div className="flex gap-6 w-10/12 justify-between items-center mx-auto py-3 ">
+    <div className="flex w-full bg-violet-500">
+      <nav className="flex gap-6 w-10/12 justify-between items-center mx-auto py-3 sticky top-0">
         <h2 className="text-white items-center font-semibold text-xl">
           <Link to="/">Redux-Toolkit Blogs</Link>
         </h2>
-        <ul className={`flex gap-4 nav-links ${showNav && "active"}`}>
+        <ul className={`flex gap-4 nav-links`}>
           <li className="flex text-white items-center  text-xl">
             <NavLink to="/">Home</NavLink>
           </li>
@@ -28,7 +28,7 @@ const Navbar = () => {
           className="text-2xl text-white burger"
           onClick={handleShowNavbar}
         />
-      </div>
+      </nav>
     </div>
   );
 };

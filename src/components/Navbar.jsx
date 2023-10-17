@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link to="/">Redux-Toolkit Blogs</Link>
         </h2>
         <div className="burger text-2xl text-white" onClick={handleShowNavbar}>
-          {showNav ? <FaBars /> : <AiOutlineMenu />}
+          {showNav ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
         <div className={`nav-links ${showNav && "active"}`}>
           <ul className={`flex gap-4 `}>

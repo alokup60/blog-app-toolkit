@@ -1,0 +1,37 @@
+/* scroll-y not possible  */
+.active-modal {
+  overflow-y: hidden;
+}
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-div {
+    width: 100%;
+  }
+  .sub-main {
+    width: 90%;
+  }
+}
